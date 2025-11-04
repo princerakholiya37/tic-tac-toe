@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<style>
+    .main {
+        background: linear-gradient(90deg, rgba(196, 230, 255, 1) 0%, rgba(235, 232, 232, 1) 96%);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .inner {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cell {
+        height: 70px;
+        width: 70px;
+        border-radius: 7px;
+        margin: 5px;
+        background: linear-gradient(90deg, rgba(235, 232, 232, 1) 0%, rgba(146, 208, 252, 1) 100%);
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .cell:hover {
+        background: linear-gradient(90deg, rgba(196, 230, 255, 1) 0%, rgba(235, 232, 232, 1) 96%);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="head">
+                <h2>Tic Tac Toe Game</h2>
+                <p id="status" class="fw-semibold fs-5 text-primary"></p>
+            </div>
+            <div class="inner mb-4">
+                <input type="button" class="cell" onclick="btn0(); win();" id="btn0" />
+                <input type="button" class="cell" onclick="btn1(); win();" id="btn1" />
+                <input type="button" class="cell" onclick="btn2(); win();" id="btn2" />
+                <input type="button" class="cell" onclick="btn3(); win();" id="btn3" />
+                <input type="button" class="cell" onclick="btn4(); win();" id="btn4" />
+                <input type="button" class="cell" onclick="btn5(); win();" id="btn5" />
+                <input type="button" class="cell" onclick="btn6(); win();" id="btn6" />
+                <input type="button" class="cell" onclick="btn7(); win();" id="btn7" />
+                <input type="button" class="cell" onclick="btn8(); win();" id="btn8" />
+            </div>
+
+
+            <button id="reset" class="btn btn-success px-4" onclick="rst()">Reset Game</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
