@@ -121,7 +121,7 @@ function win() {
     var a8 = document.getElementById('btn8').value
 
     if (a0 == 'X' && a1 == 'X' && a2 == 'X') {
-        document.getElementById('status').value = 'X is Win'
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
