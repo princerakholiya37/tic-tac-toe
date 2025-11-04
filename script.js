@@ -131,7 +131,7 @@ function win() {
     }
 
     if (a3 == 'X' && a4 == 'X' && a5 == 'X') {
-        alert("X is Win");
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn0').disabled = true;
         document.getElementById('btn1').disabled = true;
         document.getElementById('btn2').disabled = true;
@@ -141,7 +141,7 @@ function win() {
     }
 
     if (a6 == 'X' && a7 == 'X' && a8 == 'X') {
-        alert("X is Win");
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -151,7 +151,7 @@ function win() {
     }
 
     if (a0 == 'X' && a3 == 'X' && a6 == 'X') {
-        alert("X is Win");
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn7').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -161,7 +161,7 @@ function win() {
     }
 
     if (a1 == 'X' && a4 == 'X' && a7 == 'X') {
-        alert("X is Win");
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn6').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -171,7 +171,7 @@ function win() {
     }
 
     if (a2 == 'X' && a5 == 'X' && a8 == 'X') {
-        alert("X is Win");
+        document.getElementById('status').innerText = "X is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -181,7 +181,7 @@ function win() {
     }
 
     if (a0 == 'O' && a1 == 'O' && a2 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "o is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -191,7 +191,7 @@ function win() {
     }
 
     if (a3 == 'O' && a4 == 'O' && a5 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "O is Win"
         document.getElementById('btn0').disabled = true;
         document.getElementById('btn1').disabled = true;
         document.getElementById('btn2').disabled = true;
@@ -201,7 +201,7 @@ function win() {
     }
 
     if (a6 == 'O' && a7 == 'O' && a8 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "O is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -211,7 +211,7 @@ function win() {
     }
 
     if (a0 == 'O' && a3 == 'O' && a6 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "O is Win"
         document.getElementById('btn7').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -221,7 +221,7 @@ function win() {
     }
 
     if (a1 == 'O' && a4 == 'O' && a7 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "O is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn6').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -231,7 +231,7 @@ function win() {
     }
 
     if (a2 == 'O' && a5 == 'O' && a8 == 'O') {
-        alert("O is Win");
+        document.getElementById('status').innerText = "O is Win"
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -240,7 +240,7 @@ function win() {
         document.getElementById('btn6').disabled = true;
     }
 
-    if  ((a0 == 'X' || a0 == 'O') &&
+    if ((a0 == 'X' || a0 == 'O') &&
         (a1 == 'X' || a1 == 'O') &&
         (a2 == 'X' || a2 == 'O') &&
         (a3 == 'X' || a3 == 'O') &&
@@ -248,13 +248,13 @@ function win() {
         (a5 == 'X' || a5 == 'O') &&
         (a6 == 'X' || a6 == 'O') &&
         (a7 == 'X' || a7 == 'O')) {
-        alert("draw")
-    } 
+        document.getElementById('status').innerText = "Draw"
+    }
 
 }
 
 
 
-function rst(){
+function rst() {
     location.reload('reset')
 }
