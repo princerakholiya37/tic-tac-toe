@@ -180,6 +180,26 @@ function win() {
         document.getElementById('btn6').disabled = true;
     }
 
+    if (a0 == 'X' && a4 == 'X' && a8 == 'X') {
+        document.getElementById('status').innerText = "X is Win"
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn6').disabled = true;
+    }
+
+    if (a2 == 'X' && a4 == 'X' && a6 == 'X') {
+        document.getElementById('status').innerText = "X is Win"
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn0').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn8').disabled = true;
+    }
+
     if (a0 == 'O' && a1 == 'O' && a2 == 'O') {
         document.getElementById('status').innerText = "o is Win"
         document.getElementById('btn3').disabled = true;
@@ -238,6 +258,26 @@ function win() {
         document.getElementById('btn0').disabled = true;
         document.getElementById('btn1').disabled = true;
         document.getElementById('btn6').disabled = true;
+    }
+
+    if (a0 == 'O' && a4 == 'O' && a8 == 'O') {
+        document.getElementById('status').innerText = "O is Win"
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn6').disabled = true;
+    }
+
+    if (a2 == 'O' && a4 == 'O' && a6 == 'O') {
+        document.getElementById('status').innerText = "O is Win"
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn0').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn8').disabled = true;
     }
 
     if ((a0 == 'X' || a0 == 'O') &&
