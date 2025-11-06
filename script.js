@@ -1,4 +1,5 @@
 var cls = 1;
+var gameover = false;
 
 function btn0() {
     if (cls == 1) {
@@ -12,6 +13,7 @@ function btn0() {
         cls = 1;
     }
 }
+
 function btn1() {
     if (cls == 1) {
         document.getElementById('btn1').value = 'X';
@@ -24,6 +26,7 @@ function btn1() {
         cls = 1;
     }
 }
+
 function btn2() {
     if (cls == 1) {
         document.getElementById('btn2').value = 'X';
@@ -36,6 +39,7 @@ function btn2() {
         cls = 1;
     }
 }
+
 function btn3() {
     if (cls == 1) {
         document.getElementById('btn3').value = 'X';
@@ -48,6 +52,7 @@ function btn3() {
         cls = 1;
     }
 }
+
 function btn4() {
     if (cls == 1) {
         document.getElementById('btn4').value = 'X';
@@ -60,6 +65,7 @@ function btn4() {
         cls = 1;
     }
 }
+
 function btn5() {
     if (cls == 1) {
         document.getElementById('btn5').value = 'X';
@@ -72,6 +78,7 @@ function btn5() {
         cls = 1;
     }
 }
+
 function btn6() {
     if (cls == 1) {
         document.getElementById('btn6').value = 'X';
@@ -84,6 +91,7 @@ function btn6() {
         cls = 1;
     }
 }
+
 function btn7() {
     if (cls == 1) {
         document.getElementById('btn7').value = 'X';
@@ -96,6 +104,7 @@ function btn7() {
         cls = 1;
     }
 }
+
 function btn8() {
     if (cls == 1) {
         document.getElementById('btn8').value = 'X';
@@ -121,7 +130,9 @@ function win() {
     var a8 = document.getElementById('btn8').value
 
     if (a0 == 'X' && a1 == 'X' && a2 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -131,7 +142,9 @@ function win() {
     }
 
     if (a3 == 'X' && a4 == 'X' && a5 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn0').disabled = true;
         document.getElementById('btn1').disabled = true;
         document.getElementById('btn2').disabled = true;
@@ -141,7 +154,9 @@ function win() {
     }
 
     if (a6 == 'X' && a7 == 'X' && a8 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -151,7 +166,9 @@ function win() {
     }
 
     if (a0 == 'X' && a3 == 'X' && a6 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn7').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -161,7 +178,9 @@ function win() {
     }
 
     if (a1 == 'X' && a4 == 'X' && a7 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn6').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -171,7 +190,9 @@ function win() {
     }
 
     if (a2 == 'X' && a5 == 'X' && a8 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -181,7 +202,9 @@ function win() {
     }
 
     if (a0 == 'X' && a4 == 'X' && a8 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn5').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -191,7 +214,9 @@ function win() {
     }
 
     if (a2 == 'X' && a4 == 'X' && a6 == 'X') {
-        document.getElementById('status').innerText = "X is Win"
+        let b = document.getElementById('status').innerText = "X is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn5').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -201,7 +226,9 @@ function win() {
     }
 
     if (a0 == 'O' && a1 == 'O' && a2 == 'O') {
-        document.getElementById('status').innerText = "o is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -211,7 +238,9 @@ function win() {
     }
 
     if (a3 == 'O' && a4 == 'O' && a5 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn0').disabled = true;
         document.getElementById('btn1').disabled = true;
         document.getElementById('btn2').disabled = true;
@@ -221,7 +250,9 @@ function win() {
     }
 
     if (a6 == 'O' && a7 == 'O' && a8 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -231,7 +262,9 @@ function win() {
     }
 
     if (a0 == 'O' && a3 == 'O' && a6 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn7').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -241,7 +274,9 @@ function win() {
     }
 
     if (a1 == 'O' && a4 == 'O' && a7 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn6').disabled = true;
         document.getElementById('btn5').disabled = true;
@@ -251,7 +286,9 @@ function win() {
     }
 
     if (a2 == 'O' && a5 == 'O' && a8 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn4').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -261,7 +298,9 @@ function win() {
     }
 
     if (a0 == 'O' && a4 == 'O' && a8 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn5').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -271,7 +310,9 @@ function win() {
     }
 
     if (a2 == 'O' && a4 == 'O' && a6 == 'O') {
-        document.getElementById('status').innerText = "O is Win"
+        let a = document.getElementById('status').innerText = "O is Win"
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
         document.getElementById('btn3').disabled = true;
         document.getElementById('btn5').disabled = true;
         document.getElementById('btn7').disabled = true;
@@ -289,12 +330,24 @@ function win() {
         (a6 == 'X' || a6 == 'O') &&
         (a7 == 'X' || a7 == 'O')) {
         document.getElementById('status').innerText = "Draw"
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn0').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('reset').innerHTML = 'Play Again'
+        gameover = true;
     }
-
 }
 
-
-
 function rst() {
-    location.reload('reset')
+    if (gameover) {
+        location.reload();
+    }
+    else {
+        location.reload('reset');
+    }
 }
